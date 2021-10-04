@@ -1,18 +1,5 @@
 .skills {
     margin-top: 125px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__items {
         margin-top: 60px;
         display: grid;
@@ -42,7 +29,9 @@
         display: grid;
         gap: 38px 45px;
         grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, 62px);
+        grid-template-rows: repeat(2, minmax(62px, auto));
+        grid-auto-columns: 350px;
+        grid-auto-rows: 62px;
     }
     &__rating {
         display: flex;

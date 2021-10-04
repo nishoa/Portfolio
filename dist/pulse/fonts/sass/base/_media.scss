@@ -1,0 +1,227 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 730px;
+    }
+    .button {
+        &_main {
+            width: 280px;
+            height: 46px;
+        }
+    }
+    
+    .benefits {
+        &__item {
+            width: 210px;
+        }
+    }
+    .carousel {
+        .slick-slide img {
+            margin: 0 auto;
+            width: 100%;
+        }      
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around
+        }
+        &__tab {
+            width: 160px;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .button {
+        width: 135px;
+        height: 28px;
+        &_main {
+            width: 260px;
+            height: 40px;
+        }
+        &_submit {
+            font-size: 16px;
+            width: 100%;
+            height: 45px;
+        }
+    }
+    .title {
+        font-size: 28px;
+        &_left {
+            font-size: 34px;
+        }
+    }
+    .feed_form {
+        width: 280px;
+        input {
+            height: 45px;
+        }
+    }
+    .header {
+        &__logo {
+            width: 210px;
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 40px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .benefits {
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin-top: 65px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .consultation {
+        &__descr {
+            font-size: 19px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: auto;
+        }
+    }
+    .reviews {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icon {
+            margin-right: 0;
+        }
+        &__title {
+            margin-top: 10px;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 315px;
+    }
+    .button {
+        width: 120px;
+        height: 25px;
+        font-size: 11px;
+        &_main {
+            width: 200px;
+            height: 37px;
+            font-size: 13px;
+        }
+        &_submit {
+            font-size: 13px;
+            width: 100%;
+            height: 45px;
+        }
+    }
+    .title {
+        font-size: 25px;
+        &_left {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+    .feed_form {
+        margin: 36px auto;
+        width: 220px;
+    }
+    .feed_form_mt25 {
+        width: 220px;
+    }
+    .header {
+        &__logo {
+            width: 162px;
+        }
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icons {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__header {
+            text-align: center;
+        }
+        &__subheader {
+            text-align: center;
+        }
+    }
+    .consultation {
+        padding: 70px 0 97px 0;
+        &__descr {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            width: 240px;
+            margin-top: 19px;
+            font-size: 17px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+        }
+    }
+    .modal {
+        width: 90%;
+        &__close {
+            right: 0;
+        }
+    }
+}
