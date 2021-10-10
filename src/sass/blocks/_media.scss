@@ -26,6 +26,25 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            padding: 60px 0 0 0;
+            display: grid;
+            grid-template-columns: repeat(2,425px);
+            column-gap: 100px;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(3, 270px);
+            grid-template-rows: repeat(2, minmax(270px, auto));
+            justify-content: space-evenly;
+        }
+        &__ratings {
+            grid-template-columns: repeat(3,290px);
+            grid-auto-columns: 290px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -48,6 +67,22 @@
                 grid-template-columns: 40px 320px;
                 column-gap: 20px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 300px 300px;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(2, 270px);
+            grid-template-rows: repeat(2, minmax(270px, auto));
+            justify-content: space-evenly;
+        }
+        &__ratings {
+            grid-template-columns: repeat(2,320px);
+            grid-auto-columns: 320px;
         }
     }
 }
@@ -86,6 +121,22 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 400px;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(2, 270px);
+            grid-template-rows: repeat(2, minmax(270px, auto));
+            justify-content: space-evenly;
+        }
+        &__ratings {
+            grid-template-columns: repeat(1,1fr);
+            grid-auto-columns: 1fr;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -99,6 +150,9 @@
         }
         &_fz36 {
             font-size: 24px;
+        }
+        &__section-subtitle {
+            line-height: 36px;
         }
     }
     .hamburger {
@@ -121,6 +175,22 @@
         }
         &__skills {
             grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(1, 270px);
+            grid-template-rows: repeat(2, minmax(270px, auto));
+            justify-content: space-evenly;
+        }
+        &__ratings {
+            grid-template-columns: repeat(1,1fr);
+            grid-auto-columns: 1fr;
         }
     }
 }
