@@ -14,6 +14,7 @@
         grid-template-columns: 400px 570px;
         grid-template-rows: repeat(2, minmax(260px, auto));
         column-gap: 70px;
+        row-gap: 40px;
     }
     &__text {
         padding-top: 20px;
@@ -33,10 +34,12 @@
     }
     &__skills {
         display: grid;
-        grid-template-columns: repeat(2, minmax(260px, auto));
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
+        grid-auto-rows: 1fr;
         column-gap: 50px;
-        grid-row: 2/3;
-        grid-column: 2/3;
+        row-gap: 20px;
+        // grid-row: 2/3;
+        // grid-column: 2/3;
         &-descr {
             font-weight: 500;
             font-size: 12px;
@@ -44,8 +47,9 @@
             margin-top: 6px;
         }
         &-item {
-            display: flex;
-            // padding-right: 65px;
+            display: grid;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
         }
         &-circle {
             position: relative;            
