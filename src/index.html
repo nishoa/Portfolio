@@ -131,11 +131,12 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img srcset="img/main_photo-min.jpg 300w,
-                                img/main_photo.jpg 400w"
-                        sizes="(max-width: 576px) 280px,
-                               (min-width: 577px) 400px"
-                    src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source>
+                        <source media="(max-width: 576px) 280px" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 576px) 280px" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h3 class="title title_fz16 about__title">Про меня</h3>
@@ -388,10 +389,10 @@
         </div>
     </section>
     
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Портфолио</h2>
-            <div class="title title_fz36 title__section-subtitle">Мои работы</div>
+            <h2 class="title title_fz16 title__section-title portfolio__title">Портфолио</h2>
+            <div class="title title_fz36 title__section-subtitle portfolio__subtitle">Мои работы</div>
             <div class="devider"></div>
 
             <div class="portfolio__wrapper">
@@ -415,46 +416,46 @@
                 </a>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="prices">
+    </section>
+    <section class="prices">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="devider"></div>
 
             <div class="prices__wrapper">
                 <div class="prices__item">
-                    <div class="title title_fz14 prices__title">Landing-page</div>
+                    <div class="prices__title">Landing-page</div>
                     <div class="prices__price">от 8000 руб.</div>
                     <div class="prices__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
                 </div>
                 <div class="prices__item">
-                    <div class="title title_fz14 prices__title">Web-приложение</div>
+                    <div class="prices__title">Web-приложение</div>
                     <div class="prices__price">от 28000 руб.</div>
                     <div class="prices__descr">Приложение внутри браузера для лучшего комфорта</div>
                 </div>
                 <div class="prices__item">
-                    <div class="title title_fz14 prices__title">Корпоративный сайт</div>
+                    <div class="prices__title">Корпоративный сайт</div>
                     <div class="prices__price">от 20000 руб.</div>
                     <div class="prices__descr">Сайт для вашего бизнеса или компании</div>
                 </div>
                 <div class="prices__item">
-                    <div class="title title_fz14 prices__title">Android/IOS Приложение</div>
+                    <div class="prices__title">Android/IOS Приложение</div>
                     <div class="prices__price">от 25000 руб.</div>
                     <div class="prices__descr">Приложение для смартфона любой ОС</div>
                 </div>
                 <div class="prices__item">
-                    <div class="title title_fz14 prices__title">Интернет-магазин</div>
+                    <div class="prices__title">Интернет-магазин</div>
                     <div class="prices__price">от 30000 руб.</div>
                     <div class="prices__descr">Инструмент для ваших продаж в сети</div>
                 </div>
                 <div class="prices__item">
-                    <div class="title title_fz14 prices__title">Дизайн</div>
+                    <div class="prices__title">Дизайн</div>
                     <div class="prices__price">Индивидуально</div>
                     <div class="prices__descr">Создам дизайн для вашего сайта/приложения...</div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
